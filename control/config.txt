@@ -1,0 +1,17 @@
+[default]
+server_id = 
+userid = 
+key = 
+proxy = proxylist.txt
+
+[proxymode]
+Source = proxy/Proxylist.txt
+destination = proxy/destination.txt
+blacklist = proxy/blacklist.txt
+genproxy = newproxy.txt
+maxproxy = 5
+
+[protect]
+log_FAIL = 1
+proxyfix = 1
+mf = 5
