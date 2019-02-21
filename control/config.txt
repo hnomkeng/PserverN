@@ -1,7 +1,7 @@
 [default]
-server_id = 
-userid = 
-key = 
+server_id = 14843
+userid = 1234
+key =  1234
 proxy = proxylist.txt
 
 [proxymode]
