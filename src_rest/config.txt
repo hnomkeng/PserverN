@@ -1,0 +1,5 @@
+[SERVER]
+URL = Peco-ROClass3-%e0%b9%80%e0%b8%9b%e0%b8%b4%e0%b8%94%e0%b8%a7%e0%b8%b1%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88-25-%e0%b8%99%e0%b8%b5%e0%b9%89%e0%b8%ab%e0%b9%89%e0%b8%b2%e0%b8%a1%e0%b8%9e%e0%b8%a5%e0%b8%b2%e0%b8%94-14843
+[USER]
+SERVERID = 14843
+GAMEID = TESTEST
