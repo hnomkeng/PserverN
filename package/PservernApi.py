@@ -1,5 +1,6 @@
-import os ,configparser,requests,re
+import os ,configparser,requests,re,sys
 import urllib.parse
+from msvcrt import getch
 
 class package_api:
     def load():
@@ -24,12 +25,17 @@ class package_api:
         url_server = ('https://playserver.in.th/index.php/Server/')
         url_vote = ("https://playserver.in.th/index.php/Vote/prokud/")
         url_image = ("http://playserver.co/index.php/VoteGetImage/")
-        # set url server from id -------------------------------------------------------------
-        rquest_unpack = requests.get(url_server+str(server_id))                             #|
-        unpack_text = re.search(url_vote+'(.+?)"',rquest_unpack.text)                       #|
-        unpack_unicode = (unpack_text.group(1))                                             #|
-        unpack_Entities = urllib.parse.quote(unpack_unicode)                                #|
-        #-------------------------------------------------------------------------------------
+        # set url server from id ----
+        try:
+            rquest_unpack = requests.get(url_server+str(server_id))
+            unpack_text = re.search(url_vote+'(.+?)"',rquest_unpack.text)
+            unpack_unicode = (unpack_text.group(1))
+            unpack_Entities = urllib.parse.quote(unpack_unicode)
+        except:
+            print('\n Please Check you config.txt/ server_id  !! ')
+            junk = getch()
+            sys.exit()
+
         url_getpic = ("http://playserver.co/index.php/Vote/ajax_getpic/"+unpack_Entities)
         url_submitpic = ("http://playserver.co/index.php/Vote/ajax_submitpic/"+unpack_Entities)
         header = {
