@@ -20,7 +20,7 @@ USER:~: psn
 #conifg | control\config.txt
 [default]
 server_id = <14705>                    # |server  id
-userid = <playnew>                     # |user id for vote
+userid = <userid>                     # |user id for vote
 key =  <key>                           # |key 2captcha
 proxy = proxylist.txt                  # |proxy list for vote
 
